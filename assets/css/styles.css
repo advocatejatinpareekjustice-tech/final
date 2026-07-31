@@ -720,3 +720,31 @@
     @media (prefers-reduced-motion: reduce) {
       .floating-action, .floating-action__label, .mobile-action-bar a, .regularisation-chip, .regularisation-timeline .timeline-item { transition: none; }
     }
+
+
+    /* Mobile Practice Areas: horizontal swipe cards */
+@media (max-width: 767px) {
+  #practice-areas .card-grid {
+    display: flex;
+    gap: 0.9rem;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+    scroll-padding-inline: 1.125rem;
+    margin-inline: -1.125rem;
+    padding: 0.2rem 1.125rem 1.25rem;
+    scrollbar-width: none;
+  }
+
+  #practice-areas .card-grid::-webkit-scrollbar {
+    display: none;
+  }
+
+  #practice-areas .practice-card {
+    flex: 0 0 min(84vw, 330px);
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+  }
+}
+
