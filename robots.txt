@@ -1,4 +1,18 @@
+# Robots.txt — Fight for Justices | Advocate Jatin Pareek
+# https://fightforjustices.com
+
 User-agent: *
 Allow: /
+Disallow: /assets/images/
+Disallow: /*.pdf$
 
+# Sitemap
 Sitemap: https://fightforjustices.com/sitemap.xml
+
+# Crawl-delay (optional, for polite crawling)
+Crawl-delay: 5
+
+# Allow Google Image Bot
+User-agent: Googlebot-Image
+Allow: /public/
+Allow: /assets/images/

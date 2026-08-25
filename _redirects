@@ -1,0 +1,5 @@
+# Netlify Redirects File
+# Force HTTPS and clean redirects
+http://fightforjustices.com/* https://fightforjustices.com/:splat 301!
+http://www.fightforjustices.com/* https://fightforjustices.com/:splat 301!
+https://www.fightforjustices.com/* https://fightforjustices.com/:splat 301!
